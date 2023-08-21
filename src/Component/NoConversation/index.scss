@@ -1,0 +1,18 @@
+@import '../styles/colors.scss';
+main.no-conversation{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    width : 30%;
+}
+
+.Content {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+p {
+  color: $secondary;
+}

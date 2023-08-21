@@ -1,0 +1,22 @@
+@import '../../styles/colors.scss';
+
+.right-sidebar {
+  flex: .75;
+  
+  h4.right-title {
+   text-align: center;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: .75rem;
+    border-bottom: 1px solid $border;
+    .name {
+      font-weight:500;
+      color: $primary;
+    }
+  }
+}

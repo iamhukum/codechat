@@ -1,0 +1,108 @@
+@import "../../styles/colors.scss";
+
+aside.left-sidebar {
+  flex: 1.5;
+  display : flex;
+  flex-direction:column;
+
+  // header styling
+  header {
+    border-bottom: 1px solid $border;
+    height: 150px;
+    flex: .2;
+
+   .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        
+        .header-add-new-user {
+          button {
+            width : 9rem;
+            background-color : $light;
+            border: none;
+            outline: none;
+            padding: .75rem;
+            border: 1px solid $border;
+            border-radius: 5px;
+            display: inline;
+            color: $text-secondary;
+            font-size: .8rem;
+            box-shadow: 0px 0px 10px $border;
+            cursor: pointer;
+
+            .logo {
+              font-size: .8rem;
+              color: $text-secondary;
+            }
+            .text {
+              margin-left: 10px;
+            }
+
+            &:hover {
+              transform : scale(.98);
+              box-shadow: 0px 0px 1px $secondary;
+              transition: transform .1s linear;
+            }
+          }
+        }
+
+        .logo {
+            font-weight: 600;
+            font-size: 1.25rem;
+            color: $primary;
+         }
+
+        .logout-btn {
+            display: flex;
+            opacity: 0.8;
+            span {
+            margin: 0 4px;
+            font-size: 0.75rem;
+            color: $secondary;
+            font-weight: 600;
+            cursor: pointer;
+            }
+            .icon {
+              font-size: 0.95rem !important;
+            }
+            &:hover {
+            opacity: 1;
+            }
+        }
+    }
+
+    //   header search input
+    .header-search-input {
+      position: relative;
+      padding: 0.5rem 1rem;
+      input {
+        width: 100%;
+        border: none;
+        outline: none;
+        height: 40px;
+        border-radius: 5px;
+        background: #f0f0f0;
+        color: $secondary;
+        padding-left: 5px;
+      }
+
+      .search-icon {
+        position: absolute;
+        right: 25px;
+        top: 35%;
+        font-size: 1.25rem;
+        color : $secondary;
+      }
+    }
+  }
+
+  .contacts {
+    overflow-x: auto;
+    flex : 1;
+    .users-list-group {
+      padding : 0;
+    }
+  }
+}

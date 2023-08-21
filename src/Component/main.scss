@@ -1,0 +1,16 @@
+$primary : rgb(233, 232, 232);
+$secondary : lightgrey;
+$light  : #fff;
+
+
+section{
+    background: $light;
+    width :  90%;
+    height : 95vh;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px $primary;
+    border: 1px solid $secondary;
+    display : flex;
+    position: relative;
+}

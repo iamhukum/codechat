@@ -1,0 +1,11 @@
+@import '../styles/colors.scss';
+
+.left-block-avatar {
+
+    border-radius: 50%;
+    border: 3px solid $border;
+    img {
+      width : 100%;
+      border-radius: 50%;
+    }
+}
